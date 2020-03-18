@@ -46,7 +46,7 @@ class App extends Component {
     });
   };
 
-  handleFullName = e => {
+  handleChange = e => {
     let value = e.target.value;
     this.setState(prevState => ({
       user: { ...prevState.user, name: value }
@@ -58,7 +58,7 @@ class App extends Component {
     if (this.handleFormValidation()) {
       alert("Form submitted");
     } else {
-      alert("Form has errors.");
+      alert("Form has errors");
     }
   };
 
@@ -68,6 +68,7 @@ class App extends Component {
         <h2>Customer Form</h2>
         <form onSubmit={this.handleSubmit}>
           {/* <Gender gender={this.state.gender} /> */}
+
           <Sellect
             title={"Gender"}
             genderOptions={this.state.genderOptions}
@@ -80,7 +81,7 @@ class App extends Component {
             name={"name"}
             value={this.state.user.name}
             placeholder={"Enter your name"}
-            handleChange={this.handleFullName}
+            handleChange={this.handleChange}
           />
         </form>
       </div>

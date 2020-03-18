@@ -11,7 +11,7 @@ class Select extends Component {
           onChange={this.props.handleChange}
           required
         >
-          <option value="" disabled>
+          <option value="" required>
             {this.props.placeholder}
           </option>
           {this.props.genderOptions.map(gender => {
