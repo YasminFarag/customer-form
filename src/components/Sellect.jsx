@@ -14,7 +14,7 @@ class Select extends Component {
           <option value="" disabled>
             {this.props.placeholder}
           </option>
-          {this.props.options.map(option => {
+          {this.props.genderOptions.map(option => {
             return (
               <option key={option} value={option} label={option} required>
                 {option}
