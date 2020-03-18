@@ -78,7 +78,6 @@ class App extends Component {
           />
           <Data
             type={"text"}
-            title={"Full Name"}
             name={"name"}
             value={this.state.user.name}
             placeholder={"Enter your name"}

@@ -1,9 +1,10 @@
-import React from "react";
-
-const Select = props => {
-  return (
-    <div className="form-group">
-      <label htmlFor={props.name}> {props.title} </label>
+import React, { Component } from 'react';
+class  extends Component {
+    state = {  }
+    render() { 
+        return ( 
+            <div className="form-group">
+      <label> Gender </label>
       <select
         name={props.name}
         value={props.value}
@@ -22,7 +23,8 @@ const Select = props => {
         })}
       </select>
     </div>
-  );
-};
-
-export default Select;
+         );
+    }
+}
+ 
+export default ;
