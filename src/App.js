@@ -70,7 +70,6 @@ class App extends Component {
           {/* <Gender gender={this.state.gender} /> */}
           <Sellect
             title={"Gender"}
-            name={"gender"}
             options={this.state.genderOptions}
             value={this.state.user.gender}
             placeholder={"Select Gender"}
