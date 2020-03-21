@@ -32,7 +32,7 @@ class App extends Component {
 
   handleInput = e => {
     if (this.state.user.gender === "") {
-      alert("vfd");
+      alert("please enter the gender");
     }
     let value = e.target.value;
     let name = e.target.name;
